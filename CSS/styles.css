@@ -1,0 +1,115 @@
+body{
+font-family: Arial;
+margin:0;
+}
+
+/* NAVBAR */
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+background:white;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+.menu{
+display:flex;
+list-style:none;
+gap:30px;
+}
+
+.menu a{
+text-decoration:none;
+color:#333;
+font-weight:bold;
+}
+
+/* HERO */
+
+.hero{
+height:600px;
+background:url(../ASSETS/Bogota\ noche.jpg);
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+color:white;
+text-align:center;
+}
+
+.hero h1{
+font-size:60px;
+}
+
+.hero button{
+padding:12px 25px;
+border:none;
+background:#00a859;
+color:white;
+font-size:18px;
+border-radius:5px;
+}
+
+/* TEMPORADAS */
+
+.temporadas{
+padding:60px;
+text-align:center;
+}
+
+.cards{
+display:flex;
+justify-content:center;
+gap:30px;
+margin-top:40px;
+}
+
+.card{
+width:250px;
+border-radius:8px;
+overflow:hidden;
+box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+.card img{
+width:100%;
+}
+
+/* DESTINOS */
+
+.destinos{
+padding:60px;
+background:#f4f4f4;
+text-align:center;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+margin-top:40px;
+}
+
+.destino{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.destino img{
+width:100%;
+border-radius:10px;
+}
+
+/* FOOTER */
+
+footer{
+background:#222;
+color:white;
+text-align:center;
+padding:40px;
+}
