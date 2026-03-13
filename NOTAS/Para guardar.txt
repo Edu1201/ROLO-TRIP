@@ -1,0 +1,9 @@
+Para guardar
+entro en la carpeta abro el terminal y poner
+
+git init
+git add.
+git commit -m "xxxxxxxxxx"
+
+git branch -M main
+git push -u origin main
