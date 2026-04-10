@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Detalle — Bogotá Oculta</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="navbar__logo"><a href="../index.html">Bogotá <span>Oculta</span></a></div>
+    <nav class="navbar__links">
+      <a href="../index.html#explorar" data-i18n="navExplore">Explorar</a>
+      <a href="lugares.html" data-i18n="navPlaces">Lugares</a>
+    </nav>
+    <div class="lang-toggle">
+      <button class="lang-btn active" id="btn-es">ES</button>
+      <button class="lang-btn" id="btn-en">EN</button>
+    </div>
+  </header>
+
+  <main class="place-detail" style="margin-top: 100px; padding: 2rem 1.5rem;">
+    <div id="placeContent" style="max-width: 800px; margin: 0 auto;">
+      </div>
+  </main>
+
+  <script src="../js/main.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvcP6YHB2yeBhCaKwJhKr1AiQ30DwfdW4&callback=initMap"></script>
+</body>
+</html>

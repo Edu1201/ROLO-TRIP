@@ -801,3 +801,20 @@ img { max-width: 100%; display: block; }
   border-color: #c9a96e;
   font-weight: 500;
 }
+
+/* Ocultar barra de scroll en el carrusel */
+#categoryCarousel::-webkit-scrollbar {
+    display: none;
+}
+
+#categoryCarousel {
+    -ms-overflow-style: none;  /* IE y Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+/* Efecto hover para las tarjetas del carrusel */
+.cat-card:hover {
+    border-color: #c9a96e !important;
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+}

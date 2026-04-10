@@ -103,56 +103,69 @@
   </div>
 
   <!-- ========== CATEGORÍAS ========== -->
-  <section class="categories" id="explorar">
-    <div class="section-header">
-      <p class="section-label" data-i18n="catsLabel">Explorar por categoría</p>
-      <h2 class="section-title" data-i18n="catsTitle">¿Qué quieres descubrir hoy?</h2>
+  <section class="categories-section" style="padding: 4rem 20px; background-color: #0e0e0e; overflow: hidden;">
+    <div style="text-align: center; margin-bottom: 3rem;">
+        <h2 class="section-title" data-i18n="catsTitle" style="font-family: 'Playfair Display', serif; color: white; font-size: 2.5rem;">
+            ¿Qué quieres descubrir hoy?
+        </h2>
     </div>
 
-    <div class="cats-grid">
-      <div class="cat-card active" data-cat="sabores">
-        <div class="cat-card__icon">☕</div>
-        <h3 data-i18n="cat1">Sabores locales</h3>
-        <p data-i18n="cat1sub">Tiendas de barrio, mercados vivos y cocina que no sale en Instagram</p>
-      </div>
-      <div class="cat-card" data-cat="arte">
-        <div class="cat-card__icon">🎨</div>
-        <h3 data-i18n="cat2">Arte urbano</h3>
-        <p data-i18n="cat2sub">Murales, galerías independientes y cultura callejera</p>
-      </div>
-      <div class="cat-card" data-cat="naturaleza">
-        <div class="cat-card__icon">🌿</div>
-        <h3 data-i18n="cat3">Naturaleza escondida</h3>
-        <p data-i18n="cat3sub">Cerros, humedales y parques que la ciudad guarda en silencio</p>
-      </div>
-      <div class="cat-card" data-cat="barrios">
-        <div class="cat-card__icon">🏘️</div>
-        <h3 data-i18n="cat4">Barrios emergentes</h3>
-        <p data-i18n="cat4sub">Zonas con identidad propia, lejos del circuito turístico</p>
-      </div>
-      <div class="cat-card" data-cat="noche">
-        <div class="cat-card__icon">🌙</div>
-        <h3 data-i18n="cat5">Planes nocturnos</h3>
-        <p data-i18n="cat5sub">La Bogotá que despierta cuando el sol se va</p>
-      </div>
-      <div class="cat-card" data-cat="mercados">
-        <div class="cat-card__icon">🛒</div>
-        <h3 data-i18n="cat6">Mercados y plazas</h3>
-        <p data-i18n="cat6sub">Plazas de mercado que son el corazón real de los barrios</p>
-      </div>
-      <div class="cat-card" data-cat="cafe">
-        <div class="cat-card__icon">☕</div>
-        <h3 data-i18n="cat7">Café local</h3>
-        <p data-i18n="cat7sub">Tiendas de especialidad, librerías con café y tostadores independientes</p>
-      </div>
+    <div class="carousel-container" style="position: relative; max-width: 1100px; margin: 0 auto; display: flex; align-items: center; gap: 20px;">
+        <button id="prevBtn" type="button" style="background: #c9a96e; border: none; border-radius: 50%; width: 45px; height: 45px; cursor: pointer; color: white; font-weight: bold; font-size: 1.2rem; flex-shrink: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.3); transition: all 0.3s; opacity: 0.5;">
+            &#10094;
+        </button>
+        
+        <div id="categoryCarousel" class="no-scrollbar" style="display: flex; gap: 20px; overflow-x: auto; scroll-behavior: smooth; padding: 20px 0; -webkit-overflow-scrolling: touch; flex-grow: 1;">
+            
+            <div class="cat-card" data-cat="sabores" style="flex: 0 0 calc(33.333% - 13.33px); min-width: 250px; background: #1a1a1a; padding: 30px; border-radius: 15px; border: 1px solid #333; cursor: pointer; transition: all 0.3s ease;">
+                <span style="font-size: 2.5rem; display: block; margin-bottom: 15px;">☕</span>
+                <h3 style="color: white; margin: 0 0 10px 0; font-family: 'Playfair Display', serif;" data-i18n="cat1">Sabores locales</h3>
+                <p style="color: #999; font-size: 0.9rem; margin: 0; line-height: 1.5;" data-i18n="cat1sub">Tiendas de barrio, mercados vivos y cocina que no sale en Instagram</p>
+            </div>
+
+            <div class="cat-card" data-cat="arte" style="flex: 0 0 calc(33.333% - 13.33px); min-width: 250px; background: #1a1a1a; padding: 30px; border-radius: 15px; border: 1px solid #333; cursor: pointer; transition: all 0.3s ease;">
+                <span style="font-size: 2.5rem; display: block; margin-bottom: 15px;">🎨</span>
+                <h3 style="color: white; margin: 0 0 10px 0; font-family: 'Playfair Display', serif;" data-i18n="cat2">Arte urbano</h3>
+                <p style="color: #999; font-size: 0.9rem; margin: 0; line-height: 1.5;" data-i18n="cat2sub">Murales, galerías independientes y cultura callejera</p>
+            </div>
+
+            <div class="cat-card" data-cat="naturaleza" style="flex: 0 0 calc(33.333% - 13.33px); min-width: 250px; background: #1a1a1a; padding: 30px; border-radius: 15px; border: 1px solid #333; cursor: pointer; transition: all 0.3s ease;">
+                <span style="font-size: 2.5rem; display: block; margin-bottom: 15px;">🌺</span>
+                <h3 style="color: white; margin: 0 0 10px 0; font-family: 'Playfair Display', serif;" data-i18n="cat3">Naturaleza escondida</h3>
+                <p style="color: #999; font-size: 0.9rem; margin: 0; line-height: 1.5;" data-i18n="cat3sub">Cerros, humedales y parques que la ciudad guarda en silencio</p>
+            </div>
+
+            <div class="cat-card" data-cat="barrios" style="flex: 0 0 calc(33.333% - 13.33px); min-width: 250px; background: #1a1a1a; padding: 30px; border-radius: 15px; border: 1px solid #333; cursor: pointer; transition: all 0.3s ease;">
+                <span style="font-size: 2.5rem; display: block; margin-bottom: 15px;">🏘️</span>
+                <h3 style="color: white; margin: 0 0 10px 0; font-family: 'Playfair Display', serif;" data-i18n="cat4">Barrios emergentes</h3>
+                <p style="color: #999; font-size: 0.9rem; margin: 0; line-height: 1.5;" data-i18n="cat4sub">Zonas con identidad propia, lejos del circuito turístico</p>
+            </div>
+
+            <div class="cat-card" data-cat="cafe" style="flex: 0 0 calc(33.333% - 13.33px); min-width: 250px; background: #1a1a1a; padding: 30px; border-radius: 15px; border: 1px solid #333; cursor: pointer; transition: all 0.3s ease;">
+                <span style="font-size: 2.5rem; display: block; margin-bottom: 15px;">✊</span>
+                <h3 style="color: white; margin: 0 0 10px 0; font-family: 'Playfair Display', serif;" data-i18n="cat7">Café local</h3>
+                <p style="color: #999; font-size: 0.9rem; margin: 0; line-height: 1.5;" data-i18n="cat7sub">Tiendas de especialidad, librerías con café y tostadores independientes</p>
+            </div>
+
+            <div class="cat-card" data-cat="mercados" style="flex: 0 0 calc(33.333% - 13.33px); min-width: 250px; background: #1a1a1a; padding: 30px; border-radius: 15px; border: 1px solid #333; cursor: pointer; transition: all 0.3s ease;">
+                <span style="font-size: 2.5rem; display: block; margin-bottom: 15px;">🛒</span>
+                <h3 style="color: white; margin: 0 0 10px 0; font-family: 'Playfair Display', serif;" data-i18n="cat6">Mercados y plazas</h3>
+                <p style="color: #999; font-size: 0.9rem; margin: 0; line-height: 1.5;" data-i18n="cat6sub">Plazas de mercado que son el corazón real de los barrios</p>
+            </div>
+
+        </div>
+
+        <button id="nextBtn" type="button" style="background: #c9a96e; border: none; border-radius: 50%; width: 45px; height: 45px; cursor: pointer; color: white; font-weight: bold; font-size: 1.2rem; flex-shrink: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.3); transition: all 0.3s;">
+            &#10095;
+        </button>
     </div>
-  </section>
+</section>
 
 
   <!-- ========== LUGARES DESTACADOS ========== -->
   <section class="featured" id="lugares">
     <div class="section-header">
-      <p class="section-label" data-i18n="featLabel">Selección editorial</p>
+      <p class="section-label" data-i18n="featLabel">Selección de los</p>
       <h2 class="section-title" data-i18n="featTitle">Lugares que te van a sorprender</h2>
     </div>
 
